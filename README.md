@@ -2,7 +2,7 @@
 
 Um **web-app leve e responsivo** que exibe a previsão do tempo de qualquer cidade do mundo **e** mostra a bandeira do país correspondente.  
 Construído com **HTML**, **CSS** e **JavaScript Vanilla** no frontend, e um **servidor Node.js + Express** que faz a ponte com as APIs externas.
-![Bandeira do Brasil](https://flagsapi.com/BR/flat/64.png)
+
 > “Digite uma cidade, pressione Enter ou clique na lupa e veja o clima aparecer em tempo real — bandeira incluída!” 🚀
 
 ---
@@ -12,7 +12,7 @@ Construído com **HTML**, **CSS** e **JavaScript Vanilla** no frontend, e um **s
 | Recurso | Descrição |
 |---------|-----------|
 | 🌡️ **Clima atual** | Temperatura, mín/max, umidade, vento, descrição e ícone do clima. |
-| 🇧🇷 **Bandeira do país** | Imagem servida pela **CountryFlags API** baseada no código ISO do país. |
+| ![Bandeira do Brasil](https://flagsapi.com/BR/flat/64.png) **Bandeira do país** | Imagem servida pela **CountryFlags API** baseada no código ISO do país. |
 | 🕒 **Histórico inteligente** | Guarda as **5 últimas cidades** pesquisadas (com bandeira, ícone do clima e temperatura). |
 | 🧹 **Limpar histórico** | Botão “Apagar tudo” remove as listas salvas com um clique. |
 | 🔄 **Loading feedback** | Indicador de carregamento enquanto espera a resposta da API. |
