@@ -22,9 +22,9 @@ Construído com **HTML**, **CSS** e **JavaScript Vanilla** no frontend, e um **s
 
 ## 🛠️ Tecnologias & APIs
 
-- **Frontend**: HTML + CSS + JavaScript (Vanilla)
-- **Backend**: Node.js 18+ com [Express](https://expressjs.com/)
-- **APIs**  
+- **Frontend**: HTML + CSS + JavaScript (Vanilla).
+- **Backend**: Node.js.
+- **APIs:**  
 [OpenWeather API](https://openweathermap.org/api) – dados meteorológicos  
 [CountryFlags API](https://countryflagsapi.com/) – imagens de bandeiras
 
