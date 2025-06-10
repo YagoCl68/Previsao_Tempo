@@ -25,8 +25,8 @@ Construído com **HTML**, **CSS** e **JavaScript Vanilla** no frontend, e um **s
 - **Frontend**: HTML + CSS + JavaScript (Vanilla)
 - **Backend**: Node.js 18+ com [Express](https://expressjs.com/)
 - **APIs**  
--[OpenWeather API](https://openweathermap.org/api) – dados meteorológicos  
--[CountryFlags API](https://countryflagsapi.com/) – imagens de bandeiras
+[OpenWeather API](https://openweathermap.org/api) – dados meteorológicos  
+[CountryFlags API](https://countryflagsapi.com/) – imagens de bandeiras
 
 ## 🚀 Guia rápido: rodando localmente
 
