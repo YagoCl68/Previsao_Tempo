@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts.js" type="text/javascript"></script>
+  
+  <!--fonte para o css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+  <title>Trabalho Programação III</title>
+</head>
+
+<body>
+  
+    <div class="caixa-principal"> <!-- todo o conteudo -->
+        <div class="logo">
+         <img src="./icons/wind.png" height="80">
+           <h1>Previsão do Tempo</h1>
+        </div>
+
+      <div id="caixa-maior" class="ocultar"><!--responsável pelas info do tempo-->
+      <!-- lado esquerdo da caixa-maior-->
+      <div class="info-esquerda">
+        <div class ="gradiente"></div>
+        <div class="info-dia">
+          <h1 class="cidade"></h1>
+      </div>
+
+       <div class="info-tempo">
+          <h2>
+            <span>Agora</span>
+            <div class="tempo">
+              <p class="temperatura"></p>
+              <img class="img-do-clima">
+           </div>
+            <span class="descrição"></span> 
+          </h2>
+        
+          <div class = detalhes>
+              <p class="localizacao">
+                <img src="./icons/local.gif" height="20">
+                  <span>Localização:</span>
+                <img class="bandeira">
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <!--lado direito da caixa-maior -->
+      
+      <div class="informações">
+        <div class="info-sobre-tempo">
+          <div>
+            <!--info sobre temperatura max:-->
+              <img src="./icons/fever.png" height="15"> 
+            <p>Temp. Máx:</p>
+              <span class="temp-max"></span>
+             
+          </div>
+          <div>
+              <!--info sobre temperatura min:-->
+            <img src="./icons/low-temperature.png" height="15"> 
+            <p>Temp. Mín:</p>
+              <span class="temp-min"></span>
+          </div>
+          <div>
+              <!--info  sobre vento:-->
+            <img src="./icons/wind.png" height="15">
+            <p>Umidade:</p> 
+            <span class="vel-vento"></span>
+          </div>
+          <div>
+            <!--info  sobre umidade:-->
+            <img src="./icons/humidity.png" height="15">
+            <p>Vel. do Vento:</p>
+              <span class="umidade"></span>   
+          </div>
+          <div>
+            <!--info  sobre visibilidade:-->
+            <img src="./icons/eye.png" height="17">
+            <p>Visibilidade:</p>
+              <span class="Visibilidade"></span>
+          </div>
+        </div>
+      
+       
+      </div>
+
+
+      </div> 
+
+      <div class="Barra-pesquisa"><!-- Barra responsável pela pesquisar-->
+        <div class="Todos-blocos">
+          <div class="bloco-pesquisa">
+              <h3>Confira o clima de uma cidade:</h3>
+                  <div class="caixa-pesq">
+                    <img src="./icons/local.png" height="30">
+                       <input onkeypress="isEnter(event)" class="input-cidade" placeholder="Pesquisar local" >
+                         <button  onclick="clickbotao()">
+                          <img src="./icons/lupa.png" height="30">
+                         </button>
+                  </div>
+                      <div id="loading" class="ocultar" >
+                          <span class="loader">Carregando...</span>
+                      </div>   
+          </div>  
+        </div> 
+       <!--Local responsavel por guarda as cidades-->
+       <div class="historico-container">
+        <div class="header">
+            <h3>Historico de Pesquisa:</h3>
+              <button class="limpar">
+                <span style="vertical-align: middle;"> Apagar tudo</span>
+                <img src="./icons/limpar.gif"style="vertical-align: middle;" height="17" />
+              </button>
+            </div>
+               <div class = "historico-pesquisa">
+               <div class="sugestoes-container"></div>
+            </div>    
+        </div>
+      </div>
+    </div>
+</body>
+</html>

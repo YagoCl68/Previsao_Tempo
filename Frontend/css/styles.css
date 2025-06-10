@@ -1,0 +1,424 @@
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: 'Tilt Neon', sans-serif;
+  }
+
+  body{
+   height:100vh;
+   width: 100vw;
+   display: flex ;
+   justify-content:center;
+   align-items: center;
+   background: url('/Frontend/icons/ceu-sobre-as-nuvens-nuvens-cinematograficas-papel-de-parede-5.jpg');
+   background-repeat:no-repeat ;
+   background-size: cover;
+   background-position: center center ;
+   
+  }
+
+   /*Responsável por esconde items no css */
+  .ocultar{
+   display: none;
+  }
+
+  /* responsável pelo logo do css*/
+  .logo {
+   position: fixed;
+   top: 15px;
+   left: 15px;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   color: #F6F1EE;
+   font-size: 10px;
+   display: flex;
+   align-items: center;
+}
+
+
+.logo h1 {
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   margin-left: 15px;
+}
+
+/*Caixar central para centralizar todos os elementos */
+  .caixa-principal{
+   display: flex;
+
+  }
+
+/*Caixar maior responsável pelas info do tempo*/
+  #caixa-maior{
+   height: 400px;
+      background-color:#3A98B9;
+      color: #F6F1EE;
+      border-radius: 25px;
+      box-shadow: inset 5px 5px 0px #3487a5,inset -5px -5px 0px #40a9cd;
+
+  }
+
+  .gradiente{
+   position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 25px;
+      background: url('/Frontend/icons/clouds-2329680_1280.jpg');
+      background-position: center center ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.8;
+  }
+
+  .info-esquerda{
+   width: 260px;
+   height: 100%;
+   float: left;
+   display: flex;
+   border-radius: 25px;
+   justify-content: center;
+   background-position: center;
+   background-size: cover;
+   transform: scale(1.03) perspective(200px);
+   box-shadow: 0 0 20px -10px rrgba(0, 0, 0, 0.2);
+   transition: all 0.3s ease;
+  }
+
+  .info-esquerda:hover{
+   transform: scale(1.1) perspective(2500px) rotateY(5deg);
+  }
+
+ /*exibir a cidade*/
+ 
+ .info-dia{
+   position: absolute;
+   bottom:75%;
+   left:20px;
+   
+}
+.info-dia .cidade{
+   margin-left:0.9rem ;
+   justify-content:left;
+   align-items: left;
+}
+
+
+/*todas as info do tempo no quadrado maior */
+
+  
+.info-tempo{
+   position: absolute;
+   bottom:20px;
+   left: 20px;
+   background-color:#ffffff18;
+   width: 220px;
+   border-radius: 15px;
+ }
+ 
+ .info-tempo h2 {
+    margin-left:0.9rem ;
+    justify-content:left;
+    align-items: left;
+    
+ }
+
+ .info-tempo h2 span{
+    font-size: 15px;
+    
+ }
+ .info-tempo h2 p{
+    font-size: 50px;
+    width: 90px;
+    float: right;float: left;
+    margin-right:30px;
+    
+   
+ }
+
+ .detalhes{
+   border-top:1px solid #F6F1EE;
+   padding-top: 0.1rem;
+   text-align: left; 
+   margin-left: 0.9rem;
+   margin-top: 0.1rem;
+   margin-right: 0.9rem;  
+   color: rgb(208, 208, 208);
+}
+
+.descrição{
+   text-transform: capitalize;
+}
+
+
+  /*Informações do quadro menor do gradiente*/
+
+  .temperatura{  
+   font-size:50px ; 
+ }
+
+ .img-do-clima{
+   width:64px;
+   height:64px;
+ }
+
+ .bandeira{
+   height:25px;
+   margin-bottom:-8px;
+}
+
+    /* info do lado direito da caixar maior*/
+
+    .informações {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px; 
+      margin: 5px 0; 
+  }
+
+  
+  .info-sobre-tempo {
+   width: calc(100% - 10px); /* Ocupa toda a largura disponível com margens de 5px */
+   margin: 35px; /* Adiciona margens de 5px em todas as direções */
+}
+
+.info-sobre-tempo div {
+   display: flex;
+   align-items: center;
+   margin-bottom: 5px; /* Espaço entre as divs na vertical */
+}
+
+.info-sobre-tempo div img {
+   margin-left: 5px; /* Ajuste conforme necessário */
+   margin-right: 2px; /* Ajuste conforme necessário */
+}
+
+.info-sobre-tempo div p, .info-sobre-tempo div span {
+   margin: 0;
+   margin-right: 20px; /* Ajuste conforme necessário */
+}
+
+.info-sobre-tempo div span {
+   margin-left: auto; /* Faz com que o elemento fique à direita */
+}
+
+/* info Barra-pesquisa */
+  
+.Todos-blocos{
+   width: 400px;
+   height: 135px;
+    background: #F6F1EE;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    transition: 0.6s ease-out;
+    box-shadow: inset 5px 5px 0px #dbd6d4,
+    inset -5px -5px 0px #ffffff;
+    margin-bottom: 15px;   
+}
+
+.Todos-blocos:hover{
+    transform: scale(1.07);
+    transition: .6s;
+    opacity: 0.8;
+}
+
+ /*==========caixa de pesquisar========================================================================*/  
+ 
+ .Barra-pesquisa{
+   margin-left: 15px;
+   
+}
+
+ .caixa-pesq{
+   width: 100%;
+   height: min-content;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+.caixa-pesq input{
+   background: transparent;
+    color: #0766AD;
+   width: 80%;
+   font-size: 24px;
+   font-weight: 500;
+   text-transform: uppercase;
+   padding-left: 32px;
+     
+}
+ .caixa-pesq button{
+   cursor: pointer;
+   width: 50px;
+   height: 50px;
+   background: #FFD93D;
+   border-radius: 50%;
+   font-size: 22px;
+   transition: 0.4s ease;
+   border: none;
+   outline: none;
+
+}
+ .caixa-pesq button:hover{
+   background-color:#FF8400;
+}
+ .caixa-pesq i{
+   position: absolute;
+   color: #FFD93D;
+   font-size: 28px;
+}
+
+/* cor do texto da barra de pesquisar*/
+.bloco-pesquisa h3{
+   color: #0766AD;   
+ }
+/*tira linha em volta da pesquisa */
+ .input-cidade{
+   border: none;
+   outline: none;
+}
+
+
+.loader {
+   font-size: 15px;
+   display: inline-block;
+   color: #0766AD;
+   letter-spacing: 2px;
+   position: relative;
+   box-sizing: border-box;
+ }
+ 
+ .loader::after {
+   content: 'Carregando...';
+   position: absolute;
+   left: 0;
+   top: 0;
+   color: #F6F1EE;
+   text-shadow: 0 0 2px #F6F1EE, 0 0 1px #F6F1EE, 0 0 1px #F6F1EE;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   box-sizing: border-box;
+   animation: animloader 6s linear infinite;
+ }
+ 
+ @keyframes animloader {
+   0% {
+     height: 100%;
+   }
+ 
+   100% {
+     height: 0%;
+   }
+ }
+
+ /*==========caixa responsável pelo historico========================================================================*/  
+
+ .historico-container{
+   width: 400px;
+   height: 250px;
+   background-color: #301E67;
+   border-radius: 18px;
+   scroll-behavior: calc(cidade);
+   padding: 10px;
+   color: #F6F1EE; 
+box-shadow: inset 5px 5px 0px #2b1b5c,
+inset -5px -5px 0px #352172
+   
+}
+
+
+.header{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+   padding-bottom: 5px; 
+   border-bottom: 1px solid #F6F1EE;
+}
+
+.limpar{
+  color: #301E67;
+  background-color: #F6F1EE;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor:pointer;
+}
+
+
+.limpar:hover{
+  background-color:#150050;
+  color: #F6F1EE;
+
+}
+
+
+
+.remove-button {
+   cursor: pointer; 
+   margin-left:auto 
+ }
+  
+
+.cidade-button {
+   color: #fff;
+   background-color: #150050;
+   border: none;
+   outline: none;
+   width: 380px;
+   height: 35px;
+   border-radius: 6px;
+   display: flex;
+   align-items: center;
+   margin-bottom: 5px;
+}
+
+.cidade-button:hover{
+   background-color:#15005086;
+   transform: scale(1.07);
+    transition: .5s;
+    cursor: pointer;
+     
+}
+
+
+.cidade-button .cidade-info .cidade-nome {
+   margin-left: 5px; /* Margem fixa de 5px no lado esquerdo */
+}
+
+.cidade-button .cidade-info {
+   display: flex;
+   align-items: center;
+   flex-grow: 1;
+   
+}
+
+.cidade-button .previsao-img img {
+   margin-right: 5px; 
+}
+
+
+.cidade-button .temperatura-info {
+   margin-left: auto;
+   margin-right: 5px;
+
+}
+
+
+.bandeira-hist{
+   margin-left: 5px;
+      
+}
+   
+
+   
+.weather-temp{
+   font-weight: 700;
+   font-size: 3.5rem;
+ }
