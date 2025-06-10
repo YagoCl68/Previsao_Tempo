@@ -1,4 +1,4 @@
-# 🌤️ Weather & Flags App&nbsp;🇧🇷
+# 🌤️ Previsão do Tempo
 
 Um **web-app leve e responsivo** que exibe a previsão do tempo de qualquer cidade do mundo **e** mostra a bandeira do país correspondente.  
 Construído com **HTML**, **CSS** e **JavaScript Vanilla** no frontend, e um **servidor Node.js + Express** que faz a ponte com as APIs externas.
@@ -11,7 +11,6 @@ Construído com **HTML**, **CSS** e **JavaScript Vanilla** no frontend, e um **s
 
 | Recurso | Descrição |
 |---------|-----------|
-| 🔍 **Pesquisa instantânea** | Digite o nome da cidade e pressione **Enter** (capturado pelo `isEnter`). |
 | 🌡️ **Clima atual** | Temperatura, mín/max, umidade, vento, descrição e ícone do clima. |
 | 🇧🇷 **Bandeira do país** | Imagem servida pela **CountryFlags API** baseada no código ISO do país. |
 | 🕒 **Histórico inteligente** | Guarda as **5 últimas cidades** pesquisadas (com bandeira, ícone do clima e temperatura). |
@@ -26,22 +25,19 @@ Construído com **HTML**, **CSS** e **JavaScript Vanilla** no frontend, e um **s
 - **Frontend**: HTML + CSS + JavaScript (Vanilla)
 - **Backend**: Node.js 18+ com [Express](https://expressjs.com/)
 - **APIs**  
-  - [OpenWeather API](https://openweathermap.org/api) – dados meteorológicos  
-  - [CountryFlags API](https://countryflagsapi.com/) – imagens de bandeiras
+-[OpenWeather API](https://openweathermap.org/api) – dados meteorológicos  
+-[CountryFlags API](https://countryflagsapi.com/) – imagens de bandeiras
 
----🚀 Guia rápido: rodando localmente
+## 🚀 Guia rápido: rodando localmente
 
-# 1) Clone o repositório
-git clone https://github.com/<seu-usuario>/weather-flags-app.git
-cd weather-flags-app
-
-# 2) Instale as dependências
+1) Instale as dependências
+```bash
 npm install
-
-# 3) Adicione sua chave do OpenWeather
+```
+3) Adicione sua chave do OpenWeather
 echo "OPENWEATHER_API_KEY=SUA_CHAVE_AQUI" > .env
 
-# 4) Suba o servidor
-npm start
+4) Suba o servidor
+  npm start
 
 Acesse em seguida http://localhost:3000 no navegador. ✔️
