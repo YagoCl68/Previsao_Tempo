@@ -2,7 +2,7 @@
 
 Um **web-app leve e responsivo** que exibe a previsão do tempo de qualquer cidade do mundo **e** mostra a bandeira do país correspondente.  
 Construído com **HTML**, **CSS** e **JavaScript Vanilla** no frontend, e um **servidor Node.js + Express** que faz a ponte com as APIs externas.
-
+![Bandeira do Brasil](https://flagsapi.com/BR/flat/64.png)
 > “Digite uma cidade, pressione Enter ou clique na lupa e veja o clima aparecer em tempo real — bandeira incluída!” 🚀
 
 ---
