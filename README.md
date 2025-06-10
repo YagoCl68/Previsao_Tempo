@@ -1,36 +1,47 @@
-# 🌤️ Weather & Flags App 🇺🇳
+# 🌤️ Weather & Flags App&nbsp;🇧🇷
 
-Um **aplicativo web simples e elegante** que mostra a previsão do tempo para qualquer cidade do mundo, junto com a bandeira do país correspondente! 🌎✨
+Um **web-app leve e responsivo** que exibe a previsão do tempo de qualquer cidade do mundo **e** mostra a bandeira do país correspondente.  
+Construído com **HTML**, **CSS** e **JavaScript Vanilla** no frontend, e um **servidor Node.js + Express** que faz a ponte com as APIs externas.
 
-Este projeto usa a **API do OpenWeather** para trazer informações meteorológicas em tempo real e a **CountryFlags API** para exibir a bandeira do país consultado. Tudo isso com um frontend leve em HTML, CSS e JavaScript, e um backend em Node.js para gerenciar as requisições.
-
----
-
-## 🚀 Funcionalidades
-
-- 🔍 Busque a previsão do tempo atual para qualquer cidade.
-- 🇺🇳 Veja a bandeira do país da cidade pesquisada.
-- 🎨 Interface simples, responsiva e fácil de usar.
-- ⚙️ Backend em Node.js que faz a conexão com as APIs externas.
-- 🌐 Aplicação rodando localmente no seu computador.
+> “Digite uma cidade, pressione Enter ou clique na lupa e veja o clima aparecer em tempo real — bandeira incluída!” 🚀
 
 ---
 
-## 🛠️ Tecnologias Usadas
+## ✨ Principais recursos
 
-- **Frontend:** HTML, CSS, JavaScript (Vanilla)
-- **Backend:** Node.js com Express
-- **APIs:** 
-  - [OpenWeather API](https://openweathermap.org/api) — dados de clima
-  - [CountryFlags API](https://countryflagsapi.com/) — imagens das bandeiras
-
----
-
-## 📋 Pré-requisitos
-
-Antes de rodar o projeto, você precisa ter instalado:
-
-- [Node.js](https://nodejs.org/) (versão 14 ou superior)
-- npm (vem junto com o Node.js)
+| Recurso | Descrição |
+|---------|-----------|
+| 🔍 **Pesquisa instantânea** | Digite o nome da cidade e pressione **Enter** (capturado pelo `isEnter`). |
+| 🌡️ **Clima atual** | Temperatura, mín/max, umidade, vento, descrição e ícone do clima. |
+| 🇧🇷 **Bandeira do país** | Imagem servida pela **CountryFlags API** baseada no código ISO do país. |
+| 🕒 **Histórico inteligente** | Guarda as **5 últimas cidades** pesquisadas (com bandeira, ícone do clima e temperatura). |
+| 🧹 **Limpar histórico** | Botão “Apagar tudo” remove as listas salvas com um clique. |
+| 🔄 **Loading feedback** | Indicador de carregamento enquanto espera a resposta da API. |
+| 🎨 **UI responsiva** | CSS puro com fonte Google *Tilt Neon* e ícones animados `.gif`. |
 
 ---
+
+## 🛠️ Tecnologias & APIs
+
+- **Frontend**: HTML + CSS + JavaScript (Vanilla)
+- **Backend**: Node.js 18+ com [Express](https://expressjs.com/)
+- **APIs**  
+  - [OpenWeather API](https://openweathermap.org/api) – dados meteorológicos  
+  - [CountryFlags API](https://countryflagsapi.com/) – imagens de bandeiras
+
+---🚀 Guia rápido: rodando localmente
+
+# 1) Clone o repositório
+git clone https://github.com/<seu-usuario>/weather-flags-app.git
+cd weather-flags-app
+
+# 2) Instale as dependências
+npm install
+
+# 3) Adicione sua chave do OpenWeather
+echo "OPENWEATHER_API_KEY=SUA_CHAVE_AQUI" > .env
+
+# 4) Suba o servidor
+npm start
+
+Acesse em seguida http://localhost:3000 no navegador. ✔️
